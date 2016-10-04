@@ -42,7 +42,7 @@ Grid.prototype.randomAvailableCell = function () {
   }
   if (count==0) return null; // shouldn't happen
 
-  var choice = Math.floor(Math.random() * count);
+  var choice = 0;
   count = 0;	
   for (var x = 0; x < this.size; x++) {
     for (var y = 0; y < this.size; y++) {
